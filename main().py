@@ -33,11 +33,15 @@ def add_domain_to_username(username):
 
 def display_email_address(email):
     """ display the email """
-    pass
+    if "@" not in email:
+        return "Invalid email address!"
+    if "." not in email:
+        return "Invalid email address!"
+    print(f'Your email is : {email}')
 
 
 def main():
-    dummy()
+    pass
 
 
 if __name__ == '__main__':
